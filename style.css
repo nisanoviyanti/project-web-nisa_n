@@ -1,69 +1,69 @@
+*,
+html,
 body{
-    font-family: 'Open Sans', sans-serif;
-    background: #2c3e50;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto",sans-serif;
 }
-nav{
-    position: relative;
-    margin: 270px auto 0;
-    width: 590px;
-    height: 50px;
-    background: #34495e;
-    border-radius: 8px;
-    font-size: 0;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+.fContainer{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background-image: url("bg4.jpg");
 }
-nav a{
-    font-size: 15px;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    line-height: 50px;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    text-align: center;
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	padding: 15px;
+	width: 1400px;
+	height: 80px;
+	background-color: #a9a9a9;
+	box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
 }
-nav .animation{
-    position: absolute;
-    height: 100%;
-    bottom:0;
-    z-index: 0;
-    background: #1abc9c;
-    border-radius: 8px;
-    transition: all .5s ease 0s;
+.brand{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.5em;
+	padding: 15px;
+	text-transform: capitalize;
 }
-a:nth-child(1){
-    width: 110px;
+.firstname{
+	color: white;
+	font-weight: 700;
+	padding-left: 4px;
 }
-nav .start-home,a:nth-child(1):hover~.animation{
- width: 110px;
- left: 100;
+.lastname{
+	color: white;
+	font-weight: 400;
+	padding-left: 4px;
 }
-a:nth-child(2){
-    width: 110px;
+.navigation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-nav .start-home,a:nth-child(2):hover~.animation{
- width: 110px;
- left: 100;
+.navigation>li{
+	list-style-type: none;
+	padding: 15px;
 }
-a:nth-child(3){
-    width: 100px;
+.navigation > li >a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: capitalize;
 }
-nav .start-home,a:nth-child(3):hover~.animation{
-    width: 100px;
-    left: 210px;
+.navigation>li>a:hover{
+	color: #00Bfff;
+	transition: all .3s ease-in-out;
 }
-a:nth-child(4){
-    width: 160px;
+.active{
+	background-color: #00Bfff; 
+	color: white;
+	padding: 15px;
 }
-nav .start-home,a:nth-child(4):hover~.animation{
-    width: 160px;
-    left: 310px;
-}
-a:nth-child(5){
-    width: 120px;
-}
-nav .start-home,a:nth-child(5):hover~.animation{
-    width: 120px;
-    left: 470px;
+
+.active:hover{
+	color: white !important;
 }
