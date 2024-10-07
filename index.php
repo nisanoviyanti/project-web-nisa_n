@@ -19,6 +19,7 @@
 						<li><a href="halaman2.html">Romance-comedy</a>
 						<li><a href="halaman3.html">Time Travel</a>
 						<li><a href="halaman4.html">Melodrama</a>
+						<li><a href="login.php">Logout</a>
 					</ul>
 			</nav>
 		</div>
